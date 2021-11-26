@@ -1,26 +1,32 @@
 public class Temperature {
     public static void main(String[] args) {
-      System.out.println(temperature(5.8f));
+      System.out.println(temperature(5.8f, TemperatureScale("Kelvin")));
     }
     
-    public static string TemperatureScale(String Scale){
+    public static String TemperatureScale(String Scale){
        
-      if(Scale == "Celsius") {
+      if(Scale == "Celsius") 
         return "Celsius";
-      }
+      
        
-      else if (Scale == "Fahrenheit"){
+      else if (Scale == "Fahrenheit")
         return "Fahrenheit";
-      }
+      
 
-      else if (Scale == "Kelvin"){
+      else if (Scale == "Kelvin")
          return "Kelvin";
-      }
-    }
+      
+      else 
+        return "No hay na"; 
+      
+    }     
 
-    public static float temperature(float temp){
+    public static String temperature(float temp, String scale){
          
-      return 5.7f;
+      String temp2 =  Float.toString(temp);
+      String escala = scale;
+
+      return temp2 + " " + escala;
 
     }
   }

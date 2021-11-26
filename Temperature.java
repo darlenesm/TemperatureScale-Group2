@@ -29,4 +29,13 @@ public class Temperature {
       return temp2 + " " + escala;
 
     }
+
+    public static String Add(float temp, Float temp){
+       Float temperatura = Float.parseFloat(temp);
+
+      
+      if(scale == "Kelvin"){
+         return temperatura
+      }
+    }
   }
